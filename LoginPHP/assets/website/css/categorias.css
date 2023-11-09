@@ -1,0 +1,186 @@
+
+.libros-todos .titulo-categoria{
+    margin: 0;
+    color: var(--blanco);
+    padding: 2rem;
+}
+
+.primera-lista {
+    background-color: var(--azulOscuro);
+    padding: 2.1rem;
+    width: 100%;
+}
+
+.proxima-lista {
+    transform: scale(0.9);
+}
+
+.proxima-lista .libros-card {
+    margin: 2rem;
+}
+
+/************************************************************************************/
+
+/*************************************************************************************/
+.slider-title-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-title-controles h4{
+    font-family: var(--titulos);
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 2rem; 
+}
+
+.slider-title-controles .indicadores button{
+    background: #fff;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.slider-title-controles .indicadores button:hover,
+.slider-title-controles .indicadores button.activo{
+    background-color: var(--azulClaro);
+}
+
+/*************************************************************************************/
+/***************************************************************************************/
+
+.slider-title-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-title-controles h4{
+    font-family: var(--titulos);
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 2rem; 
+}
+
+.slider-title-controles .indicadores button{
+    background: #fff;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+.slider-title-controles .indicadores button:hover,
+.slider-title-controles .indicadores button.activo{
+    background-color: var(--azulClaro);
+}
+
+/************/
+
+
+.libros-slider {
+    margin-bottom: 2rem;
+}
+
+.libros-slider .slider-contenedor{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.libros-slider .slider-contenedor .flecha-izquierda,
+.libros-slider .slider-contenedor .flecha-derecha {
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: 0.2s ease all;
+}
+
+.libros-slider .slider-contenedor .flecha-izquierda:hover,
+.libros-slider .slider-contenedor .flecha-derecha:hover{
+    background: rgba(0, 0, 0, 0.9);
+} 
+
+.libros-slider .slider-contenedor .flecha-izquierda {
+    left: 0;
+}
+
+.libros-slider .slider-contenedor .flecha-derecha {
+    right: 0;
+}
+
+/******************* carousel**********************/
+
+.libros-slider .contenedor-carousel {
+    /* display: flex; */
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.libros-slider .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 40px 1.2rem;
+}
+
+.libros-slider .contenedor-carousel .cursos-card {
+    /* min-width: 20%; */
+    transition: 0.3s ease all;
+}
+
+.libros-slider .contenedor-carousel .cursos-card.hover { 
+    transform: scale(1.2);
+    transform-origin: center;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .libros-slider .flecha-derecha,
+    .libros-slider .flecha-izquierda {
+        /* display: none; */
+        transform: scaley(.6);
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .libros-slider .contenedor-carousel .carousel {
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: center; */
+        padding: 1rem 0;
+        
+    }
+}
+
+/**********************************************/
+
+@media screen and (max-width: 768px) {
+    .libros {
+        margin: 0 auto;
+    }
+    .libros-destacados{
+        width: 100%;
+    }
+    .carousel .libros-card{
+        transform: scale(0.9);
+        width: 90rem;
+        margin-left: 3rem;
+    }
+    .slider-contenedor{
+        justify-content: flex-start;
+    }
+}

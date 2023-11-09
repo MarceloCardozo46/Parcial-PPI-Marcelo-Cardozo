@@ -1,0 +1,20 @@
+.main-nosotros {
+    background-color: var(--colBackground);
+}
+
+.main-nosotros-contenedor {
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 4rem;
+    padding: 5rem;
+}
+
+.main-titulos{
+    width: 85%;
+    margin: 0 auto;
+    color: var(--blanco);
+}
+
+.main-nosotros-contenedor p{
+    line-height: 2;
+}
